@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video task</title>
+
+    <style>
+        body{
+            text-align: center;
+            background-color: pink;
+
+        }
+        #videoRange{
+            width: 40%;
+        }
+        button{
+            width: 80px;
+            height: 30px;
+            background-color: rgb(96, 21, 96);
+            color: #fff;
+            font-weight: bold;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div>
+        <video src="video.mp4" id="vid" width="600" height="600"> 
+        </video>
+    </div>
+        <input type="range" id="videoRange" min ='0' >
+        <br>
+        <br>
+    <button id="play">play</button>
+    <button id="stop">stop</button>
+    <button id="decTen"> << </button>
+    <button id="begin"> < </button>
+    <button id="end"> > </button>
+    <button id="incTen"> >> </button>
+    <label>volume
+        <input type="range" min ='0' max="1" id="volume" step="0.25">
+    </label>
+    <button id="mute">Mute</button>
+    <button id="fullscreen">[ ]</button>
+   
+    <label>speed
+        <input type="range" min ='0' max="3" id="speed" step="0.5" >
+        <span id="speedval" ></span>
+
+    </label>
+    
+    <span id="time"></span>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
